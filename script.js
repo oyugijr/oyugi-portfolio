@@ -101,3 +101,29 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     console.error(error);
     });
 });
+
+function toggleContent(e) {
+  e.preventDefault();
+  const content = document.getElementById('expandableContent');
+  const btn = document.querySelector('.btn');
+  content.style.display = content.style.display === 'grid' ? 'none' : 'grid';
+  btn.textContent = content.style.display === 'grid' ? 'Show Less' : 'Read More';
+}
+
+function toggleSection(button) {
+  const section = button.parentElement;
+  const items = section.querySelectorAll('.hidden-items');
+  const icon = button.querySelector('i');
+  
+  items.forEach(item => {
+      item.style.display = item.style.display === 'block' ? 'none' : 'block';
+  });
+  
+  icon.style.transform = icon.style.transform === 'rotate(180deg)' 
+      ? 'rotate(0deg)' 
+      : 'rotate(180deg)';
+  
+  button.textContent = button.textContent.includes('Show All') 
+      ? 'Show Less' 
+      : 'Show All';
+}

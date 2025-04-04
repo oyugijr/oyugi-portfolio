@@ -85,16 +85,77 @@
     <!-- About Section -->
     <section class="about" id="about">
         <h2 class="heading">About <span>Me</span></h2>
-        <div class="about-img">
-            <img src="img/home-image.jpg">
-            <span class="circle-spin" object-fit="fit"></span>
+        <div class="about - container">
+            <div class="about-img">
+                <img src="img/home-image.jpg">
+                <span class="circle-spin" object-fit="fit"></span>
+            </div>
+            <div class="about-content">
+                <h3>Software Engineer !</h3>
+                <p>A visionary with a strong enthusiasm for exploring intricate challenges and discovering fresh viewpoints. I thrive on questioning the status quo and discovering innovative solutions to challenges. Fueled by curiosity and a dedication to lifelong learning, I embrace opportunities to push boundaries and create a meaningful impact.</p>
+            </div>
         </div>
-        <div class="about-content">
-            <h3>Software Engineer !</h3>
-            <p>A visionary with a strong enthusiasm for exploring intricate challenges and discovering fresh viewpoints. I thrive on questioning the status quo and discovering innovative solutions to challenges. Fueled by curiosity and a dedication to lifelong learning, I embrace opportunities to push boundaries and create a meaningful impact.</p>
+
+        <div class="hidden-content" id="expandableContent">
+            <!-- Education Card -->
+            <div class="section-card">
+                <h3>Education</h3>
+                <div class="card-item first-item">
+                    <h4 class="position">Bachelor of Science in Software Engineering</h4>
+                    <div class="company-dates">
+                        <span class="company">Power Learn Project Africa</span>
+                        <span class="dates">2025-Present</span>
+                    </div>
+                    <p><Legend><i>Coursework:</i></Legend> Software engineering essentials, Startup Building, Database programming with SQL, Python programming, web development</p>
+                </div>
+                <div class="card-item first-item">
+                    <h4 class="position">Bachelor of Science in Software Engineering</h4>
+                    <div class="company-dates">
+                        <span class="company">Kirinyaga University</span>
+                        <span class="dates">2022-Present</span>
+                    </div>
+                    <p><Legend><i>Coursework:</i></Legend> OOD in java, OOP, Data structures and Algorithms, Database systems,  Database Management Systems,Computer Networks, Linear Algebra, Discrete mathematics, Applied statistics</p>
+                </div>
+                <div class="card-item hidden-items">
+                    <h4 class="position">Internet and Computing Core Certification(IC3)</h4>
+                    <div class="company-dates">
+                        <span class="company">Citizen College</span>
+                        <span class="dates">July 2022</span>
+                    </div>
+                    <p><Legend><i>Coursework:</i></Legend> Computer fundamentals, Microsoft office applications, Fundamentals of Computer networks and Internet</p>
+                </div>
+                <button class="toggle-btn" onclick="toggleSection(this)">
+                    Show All <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+    
+            <!-- Experience Card -->
+            <div class="section-card">
+                <h3>Experience</h3>
+                <div class="card-item first-item">
+                    <h4 class="position">Senior Software Developer</h4>
+                    <div class="company-dates">
+                        <span class="company">TechCorp Inc</span>
+                        <span class="dates">2022-Present</span>
+                    </div>
+                    <p>Lead developer for enterprise SaaS platform with React, TypeScript and Node.js</p>
+                </div>
+                <div class="card-item hidden-items">
+                    <h4 class="position">Frontend Engineer</h4>
+                    <div class="company-dates">
+                        <span class="company">InnovateSoft</span>
+                        <span class="dates">2020-2022</span>
+                    </div>
+                    <p>Developed responsive web applications using React and Vue.js frameworks</p>
+                </div>
+                <button class="toggle-btn" onclick="toggleSection(this)">
+                    Show All <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
         </div>
+
         <div class="btn-box btns">
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn" onclick="toggleContent(event)">Read More</a>
         </div>
     </section>
 
@@ -227,9 +288,9 @@
                 </div>
                 <div class="project-details">
                     <div class="project-header">
-                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <h3 class="project-title">EcoTech Platform</h3>
                         <div class="project-links">
-                            <a href="https://github.com/oyugijr/luhn_algo.git" target="_blank">
+                            <a href="https://github.com/ogwgjr/echo-tech.git" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                             <a href="#" target="_blank">
@@ -238,12 +299,12 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        Full-stack e-commerce platform with React frontend and Node.js backend.
+                        Echo-Tech is a comprehensive developer tool designed to streamline user engagement and enhance the presentation of sustainable technology solutions, enhancing accessibility and engagement.
                     </p>
                     <div class="project-technologies">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">SQL</span>
                     </div>
                 </div>
             </div>
@@ -255,9 +316,9 @@
                 </div>
                 <div class="project-details">
                     <div class="project-header">
-                        <h3 class="project-title">Luhn Algorithm CLI</h3>
+                        <h3 class="project-title">Expense Tracker CLI</h3>
                         <div class="project-links">
-                            <a href="https://github.com/oyugijr/luhn_algo.git" target="_blank">
+                            <a href="https://github.com/yourusername/expense-tracker.git" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                             <a href="#" target="_blank">
@@ -266,7 +327,7 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        CLI implementation of the Luhn Algorithm for validating and generating compliant numbers.
+                        A Python-based command-line application for managing personal finances with budget tracking and CSV exports.
                     </p>
                     <div class="project-technologies">
                         <span class="tech-tag">Python</span>

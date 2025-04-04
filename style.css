@@ -282,6 +282,86 @@ span {
   margin: 2rem 0 3rem;
 }
 
+.hidden-content {
+  display: none;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section-card {
+  background: var(--bg-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.section-card h3 {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--second-bg-color);
+}
+
+.card-item {
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  background: rgba(0, 171, 240, 0.05);
+  border-radius: 0.6rem;
+  border-left: 3px solid var(--main-color);
+}
+
+.position {
+  font-size: 1.6rem;
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+}
+
+.company-dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  gap: 1rem;
+}
+
+.company {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.dates {
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+.card-item p {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: var(--main-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.6rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.toggle-btn:hover {
+  background: rgba(0, 171, 240, 0.1);
+}
+
 /* Button Styling */
 .btn-box.btns {
   display: inline-block;
