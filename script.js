@@ -65,7 +65,7 @@ ScrollReveal().reveal(".about-img, .contact, .textarea-field", {
   origin: "bottom",
 });
 ScrollReveal().reveal(
-  ".btn-box, .text-animate, .about-content h3, .progress h3, .bar span, .portfolio-box, .input-box",
+  ".btn-box, .text-animate, .about-content h3, .progress h3, .bar span, .portfolio-box, .input-box, .btn-readmore",
   { origin: "left" }
 );
 ScrollReveal().reveal(".logo, .home-content p, .title", { origin: "right" });
@@ -105,7 +105,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 function toggleContent(e) {
   e.preventDefault();
   const content = document.getElementById('expandableContent');
-  const btn = document.querySelector('.btn');
+  const btn = document.querySelector('.btn-readmore');
   content.style.display = content.style.display === 'grid' ? 'none' : 'grid';
   btn.textContent = content.style.display === 'grid' ? 'Show Less' : 'Read More';
 }
