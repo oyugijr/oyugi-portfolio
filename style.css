@@ -178,7 +178,7 @@ section {
 
 .home-sci {
   position: absolute;
-  bottom: 4rem;
+  bottom: 6rem;
   width: 270px;
   display: flex;
   justify-content: space-between;
@@ -279,7 +279,7 @@ span {
 .about-content p {
   /* About Section Paragraph */
   font-size: 1.6rem;
-  margin: 2rem 0 3rem;
+  margin: 2rem 0 1.5rem;
 }
 
 .hidden-content {
