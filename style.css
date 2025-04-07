@@ -502,6 +502,40 @@ span {
 .skills-column:nth-child(3) .progress:nth-child(3) .bar span { width: 93%; }
 .skills-column:nth-child(3) .progress:nth-child(4) .bar span { width: 90%; }
 
+.tools-tech {
+  text-align: center;
+  padding: 2rem;
+}
+
+.tools-tech h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.tech-list span {
+  background-color: #081b29;
+  border: 1px solid #00abf0;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.tech-list span:hover {
+    background-color: #081b29;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #0ef;
+}
+
 /* Portfolio Section */
 .portfolio {
   background: var(--second-bg-color);
